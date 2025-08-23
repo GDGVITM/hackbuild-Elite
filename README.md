@@ -1,4 +1,4 @@
-# VisionX
+# Elite
 
 Welcome to the AI-Powered Marketing Intelligence Platform! This full-stack application provides competitive ad analysis, AI-driven campaign generation, and predictive insights to help you maximize your marketing ROI.
 
@@ -19,7 +19,7 @@ Welcome to the AI-Powered Marketing Intelligence Platform! This full-stack appli
 | ------------------------------------------------ | -------------------------------------------------- |
 | ![Landing Page](placeholder_landing_page.png)    | ![Login Modal](placeholder_login_modal.png)        |
 | **Dashboard**                                    | **Insights View**                                  |
-| ![Dashboard View](placeholder_dashboard_view.png) | ![Insights View](placeholder_insights_view.png) |
+| ![Dashboard View](placeholder_dashboard_view.png) | ![Insights View](placeholder_insights_view.jpg) |
 
 ## 🛠️ Tech Stack
 
