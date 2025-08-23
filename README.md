@@ -13,8 +13,6 @@ Welcome to the AI-Powered Marketing Intelligence Platform! This full-stack appli
 
 ## 📸 Screenshots
 
-*(You can replace these descriptions with actual screenshots of your application)*
-
 | Landing Page                                  | Dashboard                                     | Insights View                               |
 | --------------------------------------------- | --------------------------------------------- | ------------------------------------------- |
 | ![Landing Page](placeholder_landing_page.png) | ![Dashboard View](placeholder_dashboard_view.png) | ![Insights View](placeholder_insights_view.jpg) |
