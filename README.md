@@ -1,108 +1,113 @@
-AI-Powered Performance Marketing SaaS
-An intelligent competitive marketing intelligence platform that monitors competitor ads, generates winning campaigns, and maximizes ROI through advanced AI analytics.
-🚀 Features
-Core Capabilities
+# VisionX
 
-Multi-Platform Monitoring - Track competitor ads across Meta, Google, and LinkedIn
-AI Campaign Creation - Generate ad copies, targeting strategies, and budget allocations
-Smart Analytics - NLP and Computer Vision powered competitor analysis
-Predictive Insights - AI recommendations and performance predictions before campaign launch
+Welcome to the AI-Powered Marketing Intelligence Platform! This full-stack application provides competitive ad analysis, AI-driven campaign generation, and predictive insights to help you maximize your marketing ROI.
 
-Key Dashboards
+## ✨ Features
 
-Campaign Hub - Create, manage, and optimize campaigns with AI assistance
-Company Dashboard - Executive-level performance overview and real-time metrics
-Competitor Intelligence - Deep dive into competitor strategies and market gaps
-AI Strategic Insights - Advanced strategic recommendations and business intelligence
+*   **Multi-Platform Ad Monitoring**: Track competitor advertisements across various platforms.
+*   **AI-Powered Campaign Generation**: Automatically create ad copy, define target audiences, and suggest budget allocations.
+*   **Smart Analytics**: Leverage NLP and Computer Vision for in-depth analysis of competitor strategies.
+*   **Predictive Insights**: Receive AI-driven recommendations to optimize your campaigns before they launch.
+*   **Interactive AI Assistant**: Chat with a marketing expert chatbot for instant business and marketing knowledge.
+*   **User Authentication**: Secure registration and login functionality for users.
 
-🛠️ Tech Stack
-Frontend
+## 📸 Screenshots
 
-React 18 with Vite for fast development and building
-Tailwind CSS for responsive, utility-first styling
-Modern JavaScript (ES6+)
+*(You can replace these descriptions with actual screenshots of your application)*
 
-Backend
+| Landing Page                                     | Login & Register Modal                             |
+| ------------------------------------------------ | -------------------------------------------------- |
+| ![Landing Page](placeholder_lac:\Users\Ayush\OneDrive\Pictures\Screenshots\Screenshot 2025-08-23 105252.pngnding_page.png)    | ![Login Modal](placeholder_login_modal.png)        |
+| **Dashboard**                                    | **Insights View**                                  |
+| ![Dashboard View](placeholder_dashboard_view.png) | ![Insights View](placeholder_insights_view.png) |
 
-Python 3.8+
-FastAPI for high-performance API development
-SQLite for lightweight, serverless database
-SERP API for search engine results and competitor data
+## 🛠️ Tech Stack
 
-AI & Analytics
+*   **Frontend**: React, Vite, Tailwind CSS, GSAP, Lucide React
+*   **Backend**: Python, Flask (for Authentication), FastAPI (for AI Insights)
+*   **AI/ML**: Google Gemini, Pandas, NLTK, spaCy, Transformers
+*   **Database**: SQLite
 
-Natural Language Processing (NLP) for content analysis
-Computer Vision for visual ad analysis
-Machine Learning for predictive modeling and recommendations
+## 📋 Prerequisites
 
-📋 Prerequisites
-Before running this project, make sure you have the following installed:
+Before you begin, ensure you have the following installed on your system:
 
-Node.js (version 16 or higher)
-npm or yarn
-Python (version 3.8 or higher)
-pip (Python package installer)
+*   [Node.js](https://nodejs.org/) (v18 or later)
+*   [Python](https://www.python.org/) (v3.9 or later) and `pip`
+*   [Tesseract-OCR](https://github.com/UB-Mannheim/tesseract/wiki): Required for OCR tasks. Make sure to add it to your system's PATH.
+*   **WebDriver**: A browser-specific WebDriver (e.g., [ChromeDriver](https://googlechromelabs.github.io/chrome-for-testing/)) for Selenium. Ensure it's in your system's PATH.
 
-🔍 Key Features Detail
-AI-Powered Analysis
+## 🚀 Getting Started
 
-Sentiment Analysis with confidence scoring
-Marketing Effectiveness Scoring (1-10 scale)
-Quality Score Prediction for ads
-Engagement Potential estimation
-CTA Strength Assessment
+Follow these steps to get your development environment set up and running.
 
-Competitive Intelligence
+### 1. Clone the Repository
 
-Real-time ad monitoring across platforms
-NLP-powered copy analysis
-Performance predictions and benchmarking
-Market gap identification
-Strategic recommendations
+```sh
+git clone <https://github.com/GDGVITM/hackbuild-Elite.git>
+cd hackbuild-Elite
+```
 
-Campaign Optimization
+### 2. Environment Variables
 
-Multi-platform campaign creation
-AI-generated ad copy and targeting
-Budget allocation recommendations
-Performance tracking and optimization
+You need to create two `.env` files for the project to work correctly.
 
-📊 Analytics & Metrics
-The platform tracks and analyzes:
+*   **Root Directory (`.env`)**: For the Vite frontend.
+    ```
+    VITE_GEMINI_API_KEY=your_google_gemini_api_key
+    ```
+*   **Backend Directory (`backend/.env`)**: For the FastAPI/Gemini backend.
+    ```
+    GEMINI_API_KEY=your_google_gemini_api_key
+    ```
 
-Click-through rates (CTR)
-Cost per click (CPC)
-Quality scores
-Engagement rates
-ROI and conversion metrics
-Competitor performance benchmarks
+### 3. Backend Setup
 
-🤝 Contributing
+The backend consists of two services: a Flask app for authentication and a FastAPI app for AI insights.
 
-Fork the repository
-Create a feature branch (git checkout -b feature/amazing-feature)
-Commit your changes (git commit -m 'Add some amazing feature')
-Push to the branch (git push origin feature/amazing-feature)
-Open a Pull Request
+```sh
+# Navigate to the backend directory
+cd backend
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-🆘 Support
-For support and questions:
+# Create and activate a virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
+# Install the required Python packages
+pip install -r requirements.txt
 
-🗺️ Roadmap
+# Perform one-time setup for NLTK and spaCy
+python -m spacy download en_core_web_sm
+python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk.download('vader_lexicon');"
+```
 
- Advanced ML models for better predictions
- Additional platform integrations (TikTok, Twitter)
- Real-time collaboration features
- Advanced visualization dashboards
- API rate limiting and caching
- Mobile app development
+### 4. Frontend Setup
 
-⚡ Performance
+Open a new terminal and navigate to the project's root directory.
 
-FastAPI backend for high-performance API responses
-Vite for lightning-fast frontend development
-SQLite for efficient data storage and retrieval
-Optimized React components for smooth user experience
+```sh
+# (From the root directory)
+npm install
+```
+
+## 🏃‍♂️ Running the Application
+### 1. Start the AI Insights Backend (FastAPI)
+
+In your second terminal:
+
+```sh
+# In the project's root directory
+python insight_gen.py
+# The FastAPI server will start, typically on http://localhost:8000
+```
+
+### 2. Start the Frontend (Vite)
+
+In your third terminal:
+
+```sh
+# In the project's root directory
+npm run dev
+# Your React application will be available at http://localhost:5173
+```
+You can now open your browser and navigate to `http://localhost:5173` to use the application.
