@@ -17,7 +17,7 @@ Welcome to the AI-Powered Marketing Intelligence Platform! This full-stack appli
 
 | Landing Page                                     | Login & Register Modal                             |
 | ------------------------------------------------ | -------------------------------------------------- |
-| ![Landing Page](placeholder_landing_page.png)    | ![Login Modal](placeholder_login_modal.png)        |
+| ![Landing Page](placeholder_landing_page.png)    | ![Login Modal]()        |
 | **Dashboard**                                    | **Insights View**                                  |
 | ![Dashboard View](placeholder_dashboard_view.png) | ![Insights View](placeholder_insights_view.jpg) |
 
